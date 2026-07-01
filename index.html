@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стиль — Парикмахерская в Омске</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fcf9f5;
+            color: #1a1a1a;
+        }
+
+        /* Шапка */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            padding: 100px 20px 80px;
+            text-align: center;
+            color: #fff;
+            border-bottom: 4px solid #b8860b;
+        }
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            letter-spacing: 2px;
+            color: #ffd700;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+        }
+        .hero p {
+            font-size: 22px;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 15px auto 30px;
+            opacity: 0.9;
+        }
+        .hero .tag {
+            display: inline-block;
+            background: #b8860b;
+            color: #fff;
+            padding: 6px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 16px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-primary {
+            background: #ffd700;
+            color: #1a1a1a;
+        }
+        .btn-primary:hover {
+            background: #f0c000;
+            transform: scale(1.05);
+        }
+        .btn-outline {
+            border: 2px solid #ffd700;
+            color: #ffd700;
+        }
+        .btn-outline:hover {
+            background: #ffd700;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        .section-title span {
+            color: #b8860b;
+        }
+        .section-sub {
+            text-align: center;
+            color: #666;
+            font-size: 18px;
+            margin-top: 5px;
+            margin-bottom: 40px;
+        }
+
+        /* Услуги */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+            border: 1px solid #f0ebe6;
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 16px 50px rgba(184, 134, 11, 0.1);
+            border-color: #b8860b;
+        }
+        .card .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .card .price {
+            font-size: 28px;
+            font-weight: 700;
+            color: #b8860b;
+        }
+        .card .price small {
+            font-size: 16px;
+            font-weight: 400;
+            color: #888;
+        }
+
+        /* Преимущества */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .feature-item {
+            text-align: center;
+            background: #fff;
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid #f0ebe6;
+        }
+        .feature-item .icon {
+            font-size: 40px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .feature-item h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .feature-item p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* Цитата */
+        .quote {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 4px solid #b8860b;
+            border-bottom: 4px solid #b8860b;
+        }
+        .quote h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: #ffd700;
+        }
+        .quote p {
+            font-size: 18px;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 15px auto 25px;
+            opacity: 0.8;
+        }
+
+        /* Футер */
+        footer {
+            background: #0d0d0d;
+            color: #888;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer .phone {
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffd700;
+            text-decoration: none;
+        }
+        footer p {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 38px; }
+            .btn { padding: 14px 30px; font-size: 16px; }
+            .grid { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="tag">✂️ СТИЛЬ И КАЧЕСТВО</div>
+    <h1>Стрижка</h1>
+    <p>Мужские и женские стрижки, окрашивание, укладка. Сделаем красиво — быстро и со вкусом.</p>
+    <div class="btn-group">
+        <a href="tel:+7XXXXXXXXXX" class="btn btn-primary">📞 Записаться</a>
+        <a href="https://wa.me/7XXXXXXXXXX" class="btn btn-outline">✉️ Написать в WhatsApp</a>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Наши <span>услуги</span></h2>
+    <p class="section-sub">Цены на стрижки и уход</p>
+    <div class="grid">
+        <div class="card">
+            <span class="icon">✂️</span>
+            <h3>Мужская стрижка</h3>
+            <div class="price">600 <small>₽</small></div>
+        </div>
+        <div class="card">
+            <span class="icon">✂️</span>
+            <h3>Женская стрижка</h3>
+            <div class="price">900 <small>₽</small></div>
+        </div>
+        <div class="card">
+            <span class="icon">🎨</span>
+            <h3>Окрашивание</h3>
+            <div class="price">1200 <small>₽</small></div>
+        </div>
+        <div class="card">
+            <span class="icon">💇‍♂️</span>
+            <h3>Детская стрижка</h3>
+            <div class="price">450 <small>₽</small></div>
+        </div>
+        <div class="card">
+            <span class="icon">🧔</span>
+            <h3>Борода и усы</h3>
+            <div class="price">500 <small>₽</small></div>
+        </div>
+        <div class="card">
+            <span class="icon">💆</span>
+            <h3>Укладка</h3>
+            <div class="price">400 <small>₽</small></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Почему <span>выбирают</span> нас</h2>
+    <div class="features">
+        <div class="feature-item">
+            <span class="icon">⏱️</span>
+            <h4>Без очереди</h4>
+            <p>Работаем по записи, вас ждут вовремя</p>
+        </div>
+        <div class="feature-item">
+            <span class="icon">💎</span>
+            <h4>Мастера профи</h4>
+            <p>Опыт от 5 лет, постоянно обучаемся</p>
+        </div>
+        <div class="feature-item">
+            <span class="icon">🧴</span>
+            <h4>Профессиональные средства</h4>
+            <p>Используем только качественную косметику</p>
+        </div>
+        <div class="feature-item">
+            <span class="icon">☕</span>
+            <h4>Уютная атмосфера</h4>
+            <p>Чай, кофе и хорошее настроение</p>
+        </div>
+    </div>
+</div>
+
+<div class="quote">
+    <h2>«Идеальный образ начинается с правильной стрижки»</h2>
+    <p>Запишитесь уже сегодня — и вы будете выглядеть на 100%</p>
+    <a href="tel:+7XXXXXXXXXX" class="btn btn-primary">📞 Записаться</a>
+</div>
+
+<footer>
+    <a href="tel:+7XXXXXXXXXX" class="phone">📞 +7 (XXX) XXX-XX-XX</a>
+    <p>Омск, ул. Ленина, 15 | Работаем ежедневно с 10:00 до 21:00</p>
+    <p style="color:#444; margin-top:10px;">© 2026 Парикмахерская «Стиль»</p>
+</footer>
+
+</body>
+  </html>
