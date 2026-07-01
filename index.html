@@ -16,8 +16,6 @@
             background: #fcf9f5;
             color: #1a1a1a;
         }
-
-        /* Шапка */
         .hero {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
             padding: 100px 20px 80px;
@@ -81,13 +79,11 @@
             background: #ffd700;
             color: #1a1a1a;
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 60px 20px;
         }
-
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 42px;
@@ -104,8 +100,6 @@
             margin-top: 5px;
             margin-bottom: 40px;
         }
-
-        /* Услуги */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -145,8 +139,6 @@
             font-weight: 400;
             color: #888;
         }
-
-        /* Галерея */
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -165,8 +157,6 @@
             transform: scale(1.02);
             box-shadow: 0 12px 40px rgba(184, 134, 11, 0.2);
         }
-
-        /* Преимущества */
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -194,8 +184,6 @@
             color: #666;
             font-size: 14px;
         }
-
-        /* Цитата */
         .quote {
             background: #1a1a1a;
             color: #fff;
@@ -216,8 +204,6 @@
             margin: 15px auto 25px;
             opacity: 0.8;
         }
-
-        /* Футер */
         footer {
             background: #0d0d0d;
             color: #888;
@@ -234,7 +220,6 @@
             margin-top: 10px;
             font-size: 14px;
         }
-
         @media (max-width: 600px) {
             .hero h1 { font-size: 38px; }
             .btn { padding: 14px 30px; font-size: 16px; }
@@ -258,36 +243,12 @@
     <h2 class="section-title">Наши <span>услуги</span></h2>
     <p class="section-sub">Цены на стрижки и уход</p>
     <div class="grid">
-        <div class="card">
-            <span class="icon">✂️</span>
-            <h3>Мужская стрижка</h3>
-            <div class="price">600 <small>₽</small></div>
-        </div>
-        <div class="card">
-            <span class="icon">✂️</span>
-            <h3>Женская стрижка</h3>
-            <div class="price">900 <small>₽</small></div>
-        </div>
-        <div class="card">
-            <span class="icon">🎨</span>
-            <h3>Окрашивание</h3>
-            <div class="price">1200 <small>₽</small></div>
-        </div>
-        <div class="card">
-            <span class="icon">💇‍♂️</span>
-            <h3>Детская стрижка</h3>
-            <div class="price">450 <small>₽</small></div>
-        </div>
-        <div class="card">
-            <span class="icon">🧔</span>
-            <h3>Борода и усы</h3>
-            <div class="price">500 <small>₽</small></div>
-        </div>
-        <div class="card">
-            <span class="icon">💆</span>
-            <h3>Укладка</h3>
-            <div class="price">400 <small>₽</small></div>
-        </div>
+        <div class="card"><span class="icon">✂️</span><h3>Мужская стрижка</h3><div class="price">600 <small>₽</small></div></div>
+        <div class="card"><span class="icon">✂️</span><h3>Женская стрижка</h3><div class="price">900 <small>₽</small></div></div>
+        <div class="card"><span class="icon">🎨</span><h3>Окрашивание</h3><div class="price">1200 <small>₽</small></div></div>
+        <div class="card"><span class="icon">💇‍♂️</span><h3>Детская стрижка</h3><div class="price">450 <small>₽</small></div></div>
+        <div class="card"><span class="icon">🧔</span><h3>Борода и усы</h3><div class="price">500 <small>₽</small></div></div>
+        <div class="card"><span class="icon">💆</span><h3>Укладка</h3><div class="price">400 <small>₽</small></div></div>
     </div>
 </div>
 
@@ -295,7 +256,7 @@
     <h2 class="section-title">Наши <span>работы</span></h2>
     <p class="section-sub">Примеры наших стрижек</p>
     <div class="gallery">
-        <img src="https://i.ibb.co/7Yh0vJx/image.jpg" alt="Детская стрижка">
+        <img src="https://dmitry402353.github.io/parixmaxer-primer/images%20-%202026-07-01T234200.778.jpeg" alt="Детская стрижка">
         <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&h=300&fit=crop" alt="Женская стрижка">
         <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=400&h=300&fit=crop" alt="Мужская стрижка">
     </div>
@@ -304,26 +265,10 @@
 <div class="container">
     <h2 class="section-title">Почему <span>выбирают</span> нас</h2>
     <div class="features">
-        <div class="feature-item">
-            <span class="icon">⏱️</span>
-            <h4>Без очереди</h4>
-            <p>Работаем по записи, вас ждут вовремя</p>
-        </div>
-        <div class="feature-item">
-            <span class="icon">💎</span>
-            <h4>Мастера профи</h4>
-            <p>Опыт от 5 лет, постоянно обучаемся</p>
-        </div>
-        <div class="feature-item">
-            <span class="icon">🧴</span>
-            <h4>Профессиональные средства</h4>
-            <p>Используем только качественную косметику</p>
-        </div>
-        <div class="feature-item">
-            <span class="icon">☕</span>
-            <h4>Уютная атмосфера</h4>
-            <p>Чай, кофе и хорошее настроение</p>
-        </div>
+        <div class="feature-item"><span class="icon">⏱️</span><h4>Без очереди</h4><p>Работаем по записи, вас ждут вовремя</p></div>
+        <div class="feature-item"><span class="icon">💎</span><h4>Мастера профи</h4><p>Опыт от 5 лет, постоянно обучаемся</p></div>
+        <div class="feature-item"><span class="icon">🧴</span><h4>Профессиональные средства</h4><p>Используем только качественную косметику</p></div>
+        <div class="feature-item"><span class="icon">☕</span><h4>Уютная атмосфера</h4><p>Чай, кофе и хорошее настроение</p></div>
     </div>
 </div>
 
@@ -340,4 +285,4 @@
 </footer>
 
 </body>
-        </html>
+    </html>
